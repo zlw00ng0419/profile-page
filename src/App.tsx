@@ -7,7 +7,7 @@ import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
 
 function App() {
-  const [count, setCount] = useState(20);
+  const [count, setCount] = useState(15);
 
   return (
     <>
