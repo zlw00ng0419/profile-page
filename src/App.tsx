@@ -7,7 +7,7 @@ import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
 
 function App() {
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(5);
 
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
       <div className="card">
         <button
           onClick={() => {
-            setCount(count + 5);
+            setCount(count + 10);
           }}
         >
           count is {count}
