@@ -1,24 +1,41 @@
-import "./App.css";
+import './App.css';
+
+import { useState } from 'react';
+
+import viteLogo from '/vite.svg';
+
+import reactLogo from './assets/react.svg';
 
 function App() {
+  const [count, setCount] = useState(10);
+
   return (
-    <div className="wrapper">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
-      <ul>
-        <li style={{ fontSize: "40px", listStyleType: "none" }}>&lt;최지웅&gt;</li>
-        <li>조선해양공학과 23학번</li>
-        <li>ESTJ</li>
-        <li>프로그래밍 경험이 전혀 없어서 많이 배우고 싶습니다!!</li>
-        <li>처음에 낯을 좀 가리지만 친해지면 활발해집니다! 잘 부탁드립니다!</li>
-      </ul>
-    </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button
+          onClick={() => {
+            setCount(count + 5);
+          }}
+        >
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
   );
 }
 
