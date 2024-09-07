@@ -1,16 +1,11 @@
-import './reset.css';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import App from './App.tsx'
 
-import App from './App.tsx';
-
-const root = document.getElementById('root');
-
-if (root === null) throw new Error('Root element not found');
-
-createRoot(root).render(
+const rootElement = document.getElementById('root') as HTMLElement;
+createRoot(rootElement).render(
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 );
