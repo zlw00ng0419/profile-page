@@ -1,18 +1,19 @@
-import "./App.css";
+import './App.css';
 
 function App() {
   return (
     <div className="wrapper">
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
-      >
-      </div>
+      ></div>
       <ul>
-        <li style={{ fontSize: "40px", listStyleType: "none" }}>&lt;최지웅&gt;</li>
+        <li style={{ fontSize: '40px', listStyleType: 'none' }}>
+          &lt;최지웅&gt;
+        </li>
         <li>조선해양공학과 23학번</li>
         <li>ESTJ</li>
         <li>프로그래밍 경험이 전혀 없어서 많이 배우고 싶습니다!!</li>
